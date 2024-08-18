@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Rock Paper Scissors Game</title>
+        <link rel="stylesheet" href="/index.css">
+    </head>
+    <body>
+        <h3>Rock Paper Scissors</h3>
+        <div class="Computer">
+            <h4>Computer Move</h4>
+            <button id="Computer" onclick="RandomC()">Computer Move</button>
+            <p id="Computer-text">Computer Move: <span id="computerMove">None</span></p>
+        </div>
+        <div class="Game">
+            <h4>Your Move</h4>   
+            <button id="Rock" onclick="playerMove('Rock')">Rock</button>
+            <button id="Paper" onclick="playerMove('Paper')">Paper</button>
+            <button id="Scissor" onclick="playerMove('Scissor')">Scissor</button>
+            <p>Your Move: <span id="playerMove">None</span></p>
+            <h4 id="result"></h4>
+        </div>
+        <script src="/index.js"></script>
+    </body>
+</html>
